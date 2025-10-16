@@ -1,86 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Golden Cars</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Cars</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Header -->
-  <header>
-    <div class="header-content">
-      <img src="images/image-removebg-preview (2).png" alt="logo" class="logo">
-      <h1>Golden Cars</h1>
-    </div>
-    <nav>
-      <a href="index.html" class="active">Home</a>
-      <a href="cars.html">Cars</a>
-      <a href="contact.html">Contact</a>
-      <a href="aboutUs.html">About</a>
-    </nav>
-  </header>
-  <section class="scrolling-cars" style="padding: 15px 0;">
-    <marquee behavior="scroll" direction="left" scrollamount="6">
-        <img src="imges1/lambo-removebg-preview.png" alt="Lamborghini" height="100" style="margin: 0 20px; border-radius: 10px;">
-        <img src="imges1/download-removebg-preview (1).png" alt="Rolls Royce" height="100" style="margin: 0 20px; border-radius: 10px;">
-        <img src="imges1/porsche-removebg-preview.png" alt="Porsche" height="100" style="margin: 0 20px; border-radius: 10px;">
-        <img src="imges1/marced-removebg-preview.png" alt="Mercedes" height="100" style="margin: 0 20px; border-radius: 10px;">
-        <img src="imges1/fera-removebg-preview.png" alt="Ferrari" height="80" style="margin: 0 20px; border-radius: 10px;">
-        <img src="imges1/lambo-removebg-preview.png" alt="Lamborghini" height="100" style="margin: 0 20px; border-radius: 10px;">
-        <img src="imges1/download-removebg-preview (1).png" alt="Rolls Royce" height="100" style="margin: 0 20px; border-radius: 10px;">
-    </marquee>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <img src="images/image-removebg-preview (2).png" alt="logo" class="logo">
+            <h1>Golden Cars</h1>
+        </div>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="cars.html">Cars</a>
+            <a href="contact.html">Contact</a>
+            <a href="aboutUs.html">About</a>
+        </nav>
+    </header>
 
-    <hr style="color: white;">
-    <h2 style="color: white; margin-bottom: 30px;" align="center">Golden Cars Collection</h2>
+    <!-- Scrolling Cars -->
+    <section class="scrolling-cars" style="background-color: rgba(0,0,0,0.6); padding: 15px 0;">
+        <marquee behavior="scroll" direction="left" scrollamount="6">
+            <img src="imges1/lambo-removebg-preview.png" alt="Lamborghini" height="100" style="margin: 0 20px; border-radius: 10px;">
+            <img src="imges1/download-removebg-preview (1).png" alt="Rolls Royce" height="100" style="margin: 0 20px; border-radius: 10px;">
+            <img src="imges1/porsche-removebg-preview.png" alt="Porsche" height="100" style="margin: 0 20px; border-radius: 10px;">
+            <img src="imges1/marced-removebg-preview.png" alt="Mercedes" height="100" style="margin: 0 20px; border-radius: 10px;">
+            <img src="imges1/fera-removebg-preview.png" alt="Ferrari" height="80" style="margin: 0 20px; border-radius: 10px;">
+            <img src="imges1/lambo-removebg-preview.png" alt="Lamborghini" height="100" style="margin: 0 20px; border-radius: 10px;">
+            <img src="imges1/download-removebg-preview (1).png" alt="Rolls Royce" height="100" style="margin: 0 20px; border-radius: 10px;">
+        </marquee>
+    </section>
 
-    <div style="display: flex; flex-wrap: nowrap; justify-content: center; gap: 10px; margin-bottom: 40px;">
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="overlay"></div>
+        <div class="hero-text">
+            <h2>Drive Beyond Luxury</h2>
+            <p>Explore the world's most prestigious car collection — where performance meets perfection.</p>
+            <button onclick="window.location.href='cars.html'">Explore Now</button>
+        </div>
+    </section>
 
-       <img src="imges1/download-removebg-preview (1).png" alt="Rolls Royce" width="20%" style="border-radius: 5px; border: 1px solid goldenrod; cursor: pointer;" onclick="window.location.href='rr.html'">
+    <!-- Cars Collection -->
+    <section class="cars-section">
+        <h2>Golden Cars Collection</h2>
+        <div class="cars-container">
+            <img src="imges1/download-removebg-preview (1).png" alt="Rolls Royce" onclick="window.location.href='rr.html'" width="20%">
+            <img src="imges1/image-removebg-preview (3).png" alt="BMW" onclick="window.location.href='bmw.html'" width="20%">
+            <img src="imges1/fera-removebg-preview.png" alt="Ferrari" onclick="window.location.href='ferari.html'" width="20%">
+            <img src="imges1/marced-removebg-preview.png" alt="Mercedes" onclick="window.location.href='merce.html'" width="20%">
+            <img src="imges1/porsche-removebg-preview.png" alt="Porsche" onclick="window.location.href='porsche.html'" width="20%">
+        </div>
+    </section>
 
-       <img src="imges1/image-removebg-preview (3).png" alt="BMW" width="20%" style="border-radius: 5px; border: 1px solid goldenrod; cursor: pointer;" onclick="window.location.href='bmw.html'">
+    <!-- Feature Car -->
+    <section class="feature">
+        <img src="imges1/lambo-removebg-preview.png" alt="Lamborghini">
+        <div class="feature-text">
+            <h2>Lamborghini Aventador</h2>
+            <p>The Lamborghini Aventador is the pinnacle of Italian craftsmanship — pure power, sharp design, and unrelenting speed wrapped in beauty.</p>
+            <button onclick="window.location.href='lambo.html'">View More</button>
+        </div>
+    </section>
 
-       <img src="imges1/fera-removebg-preview.png" alt="Ferrari" width="20%" style="border-radius: 5px; border: 1px solid goldenrod; cursor: pointer;" onclick="window.location.href='ferari.html'">
-
-        <img src="imges1/marced-removebg-preview.png" alt="Mercedes" width="20%" style="border-radius: 5px; border: 1px solid goldenrod; cursor: pointer;" onclick="window.location.href='merce.html'">
-
-        <img src="imges1/porsche-removebg-preview.png" alt="Porsche" width="20%" style="border-radius: 5px; border: 1px solid goldenrod; cursor: pointer;" onclick="window.location.href='porsche.html'">
-
-    </div>
-  </section>
-
-  <!-- Cars Collection -->
-  <section class="cars-section">
-    <h2>Golden Cars Collection</h2>
-    <div class="cars-container">
-      <img src="imges1/download-removebg-preview (1).png" alt="Rolls Royce" onclick="window.location.href='rr.html'" width="20%">
-      <img src="imges1/image-removebg-preview (3).png" alt="BMW" onclick="window.location.href='bmw.html'" width="20%">
-      <img src="imges1/fera-removebg-preview.png" alt="Ferrari" onclick="window.location.href='ferari.html'" width="20%">
-      <img src="imges1/marced-removebg-preview.png" alt="Mercedes" onclick="window.location.href='merce.html'" width="20%">
-      <img src="imges1/porsche-removebg-preview.png" alt="Porsche" onclick="window.location.href='porsche.html'" width="20%">
-    </div>
-  </section>
-
-  <!-- Feature Car -->
-  <section class="feature">
-    <img src="imges1/lambo-removebg-preview.png" alt="Lamborghini">
-    <div class="feature-text">
-      <h2>Lamborghini Aventador</h2>
-      <p>The Lamborghini Aventador is the pinnacle of Italian craftsmanship — pure power, sharp design, and unrelenting speed wrapped in beauty.</p>
-      <button onclick="window.location.href='lambo.html'">View More</button>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Golden Cars. All rights reserved.</p>
-    <p>Follow us on 
-      <a href="#">Instagram</a> | 
-      <a href="#">Twitter</a> | 
-      <a href="#">Facebook</a>
-    </p>
-  </footer>
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Golden Cars. All rights reserved.</p>
+        <p>Follow us on 
+            <a href="#">Instagram</a> | 
+            <a href="#">Twitter</a> | 
+            <a href="#">Facebook</a>
+        </p>
+    </footer>
 
 </body>
 </html>
