@@ -1,0 +1,241 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global */
+body {
+  background-color: #f0ebe4;
+  color: #111;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Header */
+header {
+  background-color: #f0ebe4;
+  padding: 15px 40px;
+  border-bottom: 2px solid goldenrod;
+  box-shadow: 0 0 15px rgba(218,165,32,0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: goldenrod;
+  letter-spacing: 2px;
+}
+
+/* Navigation */
+nav {
+  margin-top: 10px;
+  text-align: center;
+}
+
+nav a {
+  font-size: 18px;
+  color: goldenrod;
+  margin: 0 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.3s;
+  position: relative;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: goldenrod;
+  transition: width 0.3s;
+}
+
+nav a:hover::after, nav a.active::after {
+  width: 100%;
+}
+
+/* Hero Section */
+.hero {
+  background: url('imges1/lambo-removebg-preview.png') center/cover no-repeat;
+  height: 65vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(240, 235, 228, 0.7);
+}
+
+.hero-text {
+  position: relative;
+  text-align: center;
+  z-index: 2;
+}
+
+.hero-text h2 {
+  font-size: 3rem;
+  color: goldenrod;
+  text-shadow: 0 0 20px black;
+}
+
+.hero-text p {
+  color: #111;
+  margin: 20px 0;
+  font-size: 1.1rem;
+}
+
+.hero-text button {
+  background: linear-gradient(90deg, goldenrod, darkgoldenrod);
+  border: none;
+  padding: 12px 35px;
+  border-radius: 30px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.hero-text button:hover {
+  background: linear-gradient(90deg, darkgoldenrod, goldenrod);
+  transform: scale(1.05);
+  color: black;
+}
+
+/* Cars Collection */
+.cars-section {
+  text-align: center;
+  margin: 80px 0;
+}
+
+.cars-section h2 {
+  color: goldenrod;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+.cars-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap; /* keep all images in one line */
+  padding: 0 40px;
+  overflow-x: auto;
+  padding:10px;
+}
+
+.cars-container img {
+  width: 220px;   /* fixed width */
+  height: 140px;  /* fixed height */
+  border-radius: 15px;
+  border: 2px solid goldenrod;
+  cursor: pointer;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  background-color: rgba(218,165,32,0.05);
+  padding: 10px;
+  flex-shrink: 0; /* prevents shrinking on small screens */
+}
+
+.cars-container img:hover {
+  transform: scale(1.12);
+  box-shadow: 0 0 40px goldenrod;
+}
+
+
+/* Feature Section */
+.feature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  margin: 80px;
+  flex-wrap: wrap;
+}
+
+.feature img {
+  width: 40%;
+  border-radius: 15px;
+  border: 2px solid goldenrod;
+  transition: transform 0.4s ease;
+}
+
+.feature img:hover {
+  transform: scale(1.05);
+}
+
+.feature-text {
+  max-width: 45%;
+}
+
+.feature-text h2 {
+  color: goldenrod;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.feature-text p {
+  color: #111;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.feature-text button {
+  background: linear-gradient(90deg, goldenrod, darkgoldenrod);
+  border: none;
+  padding: 10px 25px;
+  border-radius: 25px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.feature-text button:hover {
+  background: linear-gradient(90deg, darkgoldenrod, goldenrod);
+  transform: scale(1.1);
+  color: #111;
+  box-shadow: 0 0 20px black;
+}
+
+/* Footer */
+footer {
+  background-color: #f5f5f5;
+  color: #111;
+  text-align: center;
+  padding: 30px 0;
+  border-top: 2px solid goldenrod;
+}
+
+footer a {
+  color: goldenrod;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: darkgoldenrod;
+}
